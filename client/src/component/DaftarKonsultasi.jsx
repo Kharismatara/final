@@ -6,14 +6,14 @@ const DaftarKonsultasi = ({ img, nama, pengalaman, ratings }) => {
   return (
     <Row className="conselor-box">
       <Col xs={4}>
-        <img className="conselor-photo" src={img} alt="konselor1" style={{ width: "100%", maxWidth: "200px" }} />
+        <img className="conselor-photo" src={img} alt="konselor1" style={{ width: "80%", maxWidth: "180px" }} />
       </Col>
       <Col xs={8}>
-        <h4 className="font-weight-bold">{nama}</h4>
-        <p>{pengalaman}</p>
-        <div className="rating-group">
+        <h4 className="font-weight-bold fs-4">{nama}</h4>
+        <p className="  fs-5">{pengalaman}</p>
+        <div className="rating-group fs-4">
           {ratings.map((rating, index) => (
-            <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "25px", color: rating === "yellow" ? "yellow" : "gray" }} />
+            <FontAwesomeIcon key={index} icon={faStar} className="mr-1" style={{ fontSize: "23px", color: rating === "yellow" ? "yellow" : "gray" }} />
           ))}
         </div>
         <Button className="btn btn-primary mt-3 rounded-pill px-4 py-2">Konsultasi</Button>
