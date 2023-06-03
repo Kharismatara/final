@@ -4,7 +4,7 @@ import { Stack, Alert, Container, Row, Col } from "react-bootstrap";
 import DaftarKonsultasi from "../component/DaftarKonsultasi";
 import Footer from "../component/Footer";
 
-function Konsultasi(params) {
+function Konsultasi() {
   return (
     <>
       <div>
