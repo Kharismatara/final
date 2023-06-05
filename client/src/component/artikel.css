@@ -4,7 +4,7 @@
 }
 
 .text-warna {
-  color: var(--primary);
+  color: #54bca4;
 }
 
 .hero-artikel-content a {
@@ -71,5 +71,5 @@
 
 .card-body .card-link {
   font-size: 18px;
-  color: var(--primary);
+  color: #54bca4;
 }

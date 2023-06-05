@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
+import "./artikel.css";
 
 function CardArtikel() {
   const [artikelList, setArtikelList] = useState([]);
@@ -27,7 +28,7 @@ function CardArtikel() {
             </div>
             <div className="col-lg-7">
               <div className="card-body">
-                <h4 className="text-warna jenis-artikel">{artikel.jenisArtikel}</h4>
+                <h4 className="text-warna jenis-artikel"> {artikel.jenisArtikel}</h4>
                 <h6 className="card-title">{artikel.judulArtikel}</h6>
                 <p className="card-text text-justify">{artikel.rangkuman}</p>
                 <div className="text-end">
