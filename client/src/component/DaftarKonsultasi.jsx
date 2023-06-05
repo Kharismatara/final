@@ -18,7 +18,9 @@ const DaftarKonsultasi = ({ img, nama, pengalaman, ratings }) => {
           ))}
         </div>
         <Button className="btn mt-3 rounded-pill px-4 py-2" style={{ backgroundColor: "#54BCA4" }}>
-          <Link to="/chat">Konsultasi</Link>
+          <Link to="/chat" style={{ textDecoration: "none", color: "white" }}>
+            Konsultasi
+          </Link>
         </Button>
       </Col>
     </Row>
