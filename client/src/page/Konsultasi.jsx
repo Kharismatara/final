@@ -8,7 +8,7 @@ function Konsultasi() {
   return (
     <>
       <div>
-        <Stack>
+        <Stack gap={3}>
           <NavbarSipenting />
           <HeroCekKonsul
             img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717659/Assets/konsultasi_h27iqj.png"}
