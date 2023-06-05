@@ -2,6 +2,8 @@ import { Stack } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 import "../component/artikel.css";
 import NavbarSipenting from "../component/Navbar";
+import CardArtikel from "../component/CardArtikel";
+import Footer from "../component/Footer";
 function Artikel(params) {
   return (
     <>
@@ -30,7 +32,23 @@ function Artikel(params) {
                 </Col>
               </Row>
             </Container>
+
+            <Container className="artikel mt-5">
+              <Row>
+                <Col>
+                  <div className="text-center">
+                    <h1 className="fw-bold ">Artikel Terbaru</h1>
+                  </div>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="artikel-list my-5">
+                  <CardArtikel />
+                </Col>
+              </Row>
+            </Container>
           </div>
+          <Footer />
         </Stack>
       </div>
     </>
