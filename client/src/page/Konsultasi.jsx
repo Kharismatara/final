@@ -25,7 +25,7 @@ function Konsultasi() {
               </div>
             </div>
             <Container>
-              <Row>
+              <Row className="ms-5">
                 <Col lg={6} className="mb-5">
                   <DaftarKonsultasi
                     img={"https://res.cloudinary.com/damsz0xlx/image/upload/v1685717664/Assets/ka_vt5udy.png"}
