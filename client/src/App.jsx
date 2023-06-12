@@ -6,7 +6,13 @@ import Artikel from "./page/Artikel";
 import NotFound from "./page/NoteFound";
 import ChatDokter from "./page/Chat";
 import ChatBox from "./page/ChatBox";
+import LoginPage from "./page/Login";
+import RegisterPage from "./page/Register";
+const PrivateRoute = ({ component: Component, ...rest }) => {
+  const { user } = React.useContext(AuthContext);
 
+  return <Route {...rest} render={(props) => (user ? <Component {...props} /> : <Redirect to="/" />)} />;
+};
 function App() {
   return (
     <>
@@ -16,6 +22,8 @@ function App() {
         <Route path="/cekgizi" element={<CekImt />} />
         <Route path="/artikel" element={<Artikel />} />
         <Route path="/chat" element={<ChatBox />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
 
